@@ -49,8 +49,10 @@ if 'instance' not in locals():
 start = default_timer()
 # Exécuter la résolution de Sudoku
 if solve_sudoku(instance):
-    # print("Sudoku résolu par backtracking avec succès.")
+    print("Sudoku résolu par backtracking avec succès.")
+    print(instance)
     result = instance  # `result` sera utilisé pour récupérer la grille résolue depuis C#
+
 else:
     print("Aucune solution trouvée.")
 execution = default_timer() - start
