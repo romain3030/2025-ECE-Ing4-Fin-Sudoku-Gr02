@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.ORToolsSolvers", "Su
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.RecuitSimule.Solvers", "Sudoku.RecuitSimule.Solvers\Sudoku.RecuitSimule.Solvers.csproj", "{45BC3E53-0635-4026-986B-5283C27F9A01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.PSOSolvers", "Sudoku.PSOSolvers\Sudoku.PSOSolvers.csproj", "{7A91A200-94DE-4C57-AC78-72555018A861}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{45BC3E53-0635-4026-986B-5283C27F9A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45BC3E53-0635-4026-986B-5283C27F9A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45BC3E53-0635-4026-986B-5283C27F9A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A91A200-94DE-4C57-AC78-72555018A861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A91A200-94DE-4C57-AC78-72555018A861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A91A200-94DE-4C57-AC78-72555018A861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A91A200-94DE-4C57-AC78-72555018A861}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
