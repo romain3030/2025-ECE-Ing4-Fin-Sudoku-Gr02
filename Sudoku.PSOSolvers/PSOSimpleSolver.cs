@@ -1,7 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sudoku.Shared;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Sudoku.PSOSolvers
 {
@@ -25,12 +27,20 @@ namespace Sudoku.PSOSolvers
                     particle.EvaluateFitness();
 
                     if (particle.Fitness == 0)
+                    {
+                        Console.WriteLine($"Solution found at iteration {iter}");
                         return particle.ToSudokuGrid();
+                    }
                 }
 
                 bestGlobal = swarm.OrderBy(p => p.Fitness).First();
                 if (bestGlobal.Fitness == 0)
+                {
+                    Console.WriteLine($"Solution found at iteration {iter}");
                     break;
+                }
+
+                Console.WriteLine($"Iteration {iter}: Best fitness = {bestGlobal.Fitness}");
             }
 
             Console.WriteLine("PSOSimpleSolver: " + MaxIterations + " iterations");
@@ -146,13 +156,15 @@ namespace Sudoku.PSOSolvers
         private double CalculateConflicts(SudokuGrid grid)
         {
             double conflicts = 0;
-            
+
+            // Vérifier les lignes
             for (int i = 0; i < 9; i++)
             {
                 conflicts += 9 - GetRowValues(grid, i).Distinct().Count();
                 conflicts += 9 - Enumerable.Range(0, 9).Select(col => grid.Cells[col, i]).Distinct().Count();
             }
-            
+
+            // Vérifier les régions 3x3
             for (int box = 0; box < 9; box++)
             {
                 int rowStart = (box / 3) * 3;
