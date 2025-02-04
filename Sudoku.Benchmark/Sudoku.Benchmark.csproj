@@ -18,6 +18,7 @@
     <ProjectReference Include="..\Sudoku.ColorGraphSolvers\Sudoku.ColorGraphSolvers.csproj" />
     <ProjectReference Include="..\Sudoku.ORToolsSolvers2\Sudoku.ORToolsSolvers2.csproj" />
     <ProjectReference Include="..\Sudoku.ORToolsSolvers\Sudoku.ORToolsSolvers.csproj" />
+    <ProjectReference Include="..\Sudoku.PSOSolvers\Sudoku.PSOSolvers.csproj" />
     <ProjectReference Include="..\Sudoku.RecuitSimule.Solvers\Sudoku.RecuitSimule.Solvers.csproj" />
     <ProjectReference Include="..\Sudoku.Shared\Sudoku.Shared.csproj" />
     <ProjectReference Include="..\Sudoku.Backtracking\Sudoku.Backtracking.csproj" />
