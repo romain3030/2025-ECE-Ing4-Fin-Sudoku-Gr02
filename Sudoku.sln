@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.ColorGraphSolvers", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.PSOSolvers", "Sudoku.PSOSolvers\Sudoku.PSOSolvers.csproj", "{7A91A200-94DE-4C57-AC78-72555018A861}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.ColorGraph", "Sudoku.ColorGraph\Sudoku.ColorGraph.csproj", "{95BD28F6-5320-457A-8A22-4A5D4A942873}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{7A91A200-94DE-4C57-AC78-72555018A861}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A91A200-94DE-4C57-AC78-72555018A861}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A91A200-94DE-4C57-AC78-72555018A861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BD28F6-5320-457A-8A22-4A5D4A942873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BD28F6-5320-457A-8A22-4A5D4A942873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BD28F6-5320-457A-8A22-4A5D4A942873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BD28F6-5320-457A-8A22-4A5D4A942873}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
