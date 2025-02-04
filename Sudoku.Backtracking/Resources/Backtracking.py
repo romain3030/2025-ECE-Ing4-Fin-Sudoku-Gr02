@@ -1,5 +1,7 @@
 import numpy as np
 from timeit import default_timer
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
 
 def is_valid(grid, row, col, num):
     # Vérifier si num est présent dans la ligne spécifiée

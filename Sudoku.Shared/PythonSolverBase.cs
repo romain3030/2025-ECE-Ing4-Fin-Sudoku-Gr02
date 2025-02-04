@@ -249,7 +249,7 @@ namespace Sudoku.Shared
 
         protected virtual void InitializePythonComponents()
         {
-        Runtime.PythonDLL = "/usr/local/lib/libpython3.10.dylib";
+         Runtime.PythonDLL = "/usr/local/lib/libpython3.10.dylib";
 
 
             PythonEngine.Initialize();
