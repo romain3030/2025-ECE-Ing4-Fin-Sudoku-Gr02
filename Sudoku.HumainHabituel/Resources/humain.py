@@ -1,5 +1,8 @@
 import numpy as np
 from timeit import default_timer
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
+
 
 if 'instance' not in locals():
     instance = np.array([
@@ -106,13 +109,14 @@ class SudokuSolver:
                 return True
             self.puzzle = saved_puzzle 
         return False
+    
 
     def solve(self):
        
         start = default_timer()
         if self.solve_sudoku():
             print("Solution trouvée:")
-            print(self.puzzle)
+            #print(self.puzzle)
         else:
             print("Aucune solution trouvée.")
         execution = default_timer() - start
@@ -121,3 +125,4 @@ class SudokuSolver:
 
 solver = SudokuSolver(instance)
 solver.solve()
+result = solver.puzzle
